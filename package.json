@@ -1,7 +1,7 @@
 {
   "name": "datatype-verify",
-  "version": "1.0.3",
-  "description": "数据类型验证",
+  "version": "1.0.4",
+  "description": "Data format and type validation",
   "files": [
     "dist"
   ],
@@ -14,7 +14,8 @@
   },
   "keywords": [
     "dataType",
-    "check"
+    "check",
+    "js"
   ],
   "devDependencies": {
     "@babel/core": "^7.2.2",
