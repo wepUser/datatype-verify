@@ -1,6 +1,6 @@
 {
   "name": "datatype-verify",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Data format and type validation",
   "main": "dist/datatype-verify.js",
   "author": "<you@example.com>",
