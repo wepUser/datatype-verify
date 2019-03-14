@@ -1,7 +1,11 @@
 {
   "data":[
     {
-      "name": "祁县",
+      "name": "name",
+      "value": 2
+    },
+    {
+      "name": "name",
       "value": 4
     }
   ]

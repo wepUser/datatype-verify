@@ -1,28 +1,27 @@
-描述：json格式数据类型简单验证。
+####dataTypeVerify
+数据类型简单验证。
 
-使用
-
+####安装
 npm install datatype-verify
 
-import dataTypeVerify from 'datatype-verify' 
+####引用
+```
+import * as dataTypeVerify from 'datatype-verify' 
 or
 var dataTypeVerify=require('datatype-verify')
-or 
-<script type="text/javascript" src="datatype-verify.js"></script> 
- 
-方法：
-1.dataTypeVerify.getDataType 
-/**
- * 数据类型收集函数
- * @param data
- * @returns {Array}
- * 注：假设数组类型，内容格式一致
- */
- 
- 2.dataTypeVerify.ifTypeFit
- /**
-  * 输入数据和标准数据类型对比
-  * @param templeV 标准数据
-  * @param inputV 输入数据
-  */
+or
+<script type="text/javascript" src="datatype-verify.js"/> 
+<script>
+    dataTypeVerify.ifTypeFit(data1,data2).......
+</script>
+```
+
+####用法
+1.调用dataTypeVerify.ifTypeFit(param1,param2)
+
+2.参数是用户实际输入的数据和期望的数据
+
+3.返回值true或false，作为判断输入数据格式是否合法的依据
+
+4.true是合法，反则false
 
