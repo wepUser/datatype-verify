@@ -15,11 +15,11 @@ export function getDataType(value) {
     if (type === "Number") {
         if (parseInt(value) !== value) {
             type = "Float";
-        }else{
-            type="Int"
+        } else {
+            type = "Int"
         }
-    }else if(colorExpRgb.test(value) || colorExp.test(value)){
-        type="Color"
+    } else if (colorExpRgb.test(value) || colorExp.test(value)) {
+        type = "Color"
     }
     return type.toLocaleLowerCase();
 }
@@ -32,7 +32,8 @@ export function getDataType(value) {
  */
 export function compareObj(obj1, obj2) {
     for (let v in obj1) {
-        if (getDataType(obj1[v]) !== getDataType(obj2[v]) || !obj2[v]) {
+        //若obj2无相应的key，则返回false
+        if (getDataType(obj1[v]) !== getDataType(obj2[v]) || typeof obj2[v]==='undefined') {
             return false
         }
     }
@@ -66,7 +67,7 @@ export function getDataFormat(data) {
             if (getDataType(data[item]) === 'object' || getDataType(data[item]) === 'array') {
                 getDataType(data[item])
             } else {
-                data[item] = data[item];
+                data[item] = getDataType(data[item]);
             }
         })
     } else if (getDataType(data) === 'array' && data.length > 0) {
@@ -75,7 +76,7 @@ export function getDataFormat(data) {
             if (getDataType(item) === 'object' || getDataType(item) === 'array') {
                 getDataType(item)
             } else {
-                data[0] = item
+                data[0] = getDataType(item)
             }
         });
     }

@@ -53,5 +53,3 @@ export function ifTypeFit(inputV, templeV) {
     }
     return result
 }
-
-console.log('result',ifTypeFit(45,'33'));
