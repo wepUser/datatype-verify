@@ -10,7 +10,7 @@ import ifTypeFit from 'datatype-verify'
 or
 var ifTypeFit=require('datatype-verify')
 ```
-
+---
 ####用法
 1.调用ifTypeFit(param1,param2)
 
