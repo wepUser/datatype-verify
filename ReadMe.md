@@ -11,7 +11,8 @@ or
 var ifTypeFit=require('datatype-verify')
 ```
 ---
-####用法
+####用法  
+
 1.调用ifTypeFit(param1,param2)
 
 2.参数是用户实际输入的数据格式和期望的数据格式
